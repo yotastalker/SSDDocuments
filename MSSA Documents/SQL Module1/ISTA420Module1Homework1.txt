@@ -1,123 +1,0 @@
-Readings 
-Chapter 01, Background to T-SQL 
-ISTA-420, T-SQL Fundamentals 
-Read Chapter 1, pages 1 – 26, T-SQL Fundamentals. Homework Questions 
-
-
-	1.	Give an informal definition of database as used in the expression “relational database management system.” 
-
-RDMS's are used when there are many types of data and complex queries are needed.
-
- 
-	2.	Give an informal definition of database as used in the expression “Human Resources database.” 
-
-This is a database for storing Human employee as an example or students. 
-	3.	Give an informal definition of entity integrity. Is unique, it has values in it and the key never changes with either surrogate or natural keys. 
-	4.	Give an informal definition of referential integrity. 
-It is when your reference can be trusted and explicitly tells the database if the information is good and that is used by a Foreign key.  
-	5.	What is a relation as defined in the textbook? A one word answer to this question is sufficient. 
-
-Keys
- 
-	6.	Is this table in first normal form? Why or why not? If it is not, how would you change it?  Yes, it looks like it is in first normal form.
-
-That the data is in a database table.  The table stores information in rows and columns where one or more columns, called the primary key, uniquely identify each row.
-Each column contains atomic values, and there are not repeating groups of columns. I think that facCreds is to small and there should be 4 of those. Example facCreds1, facCreds2 etc.      create table faculty (
-	7.	         facID int primary key,
-	8.	         facName text,
-	9.	         facCreds text);	 
-	11.	Is this table in second normal form? Why or why not? If it is not, how would you change it? 
-
-Yes it is because it has two separate keys, one for the owner and another	 for the pet.
-      create table pets (
-	12.	         ownerID int primary key,
-	13.	         petID int primary key,
-	14.	         ownerFirstName text,
-	15.	         ownerLastName text,
-	16.	         petName text,
-	17.	         petType text);
-	18.	 
-	19.	Is this table in third normal form? Why or why not? If it is not, how would you change it? 
-
-To fix this we’ll create a new table, PostalCode, which includes PostalCode as the primary key and City as its sole column. 
-facID 
-facName 
-facCreds 
-1 
-Alan Alda 
-BA, MA 
-2 
-Bridgette Bardot 
-BS, MS, PhD 
-3 
-Casey Cason 
-AA, BBA, MBA, DEd 
-ownerID 
-petID 
-ownerFirstName 
-ownerLastName 
-petName 
-petType 
-1 
-1 
-Dom 
-Delouise 
-Rex 
-German Shepherd 
-1 
-2 
-Dom 
-Delouise 
-Lacy 
-Border Collie 
-2 
-3 
-Emilio 
-Estevez 
-Midnight 
-Persian Cat 
-
-Page 1, Revised on December 27, 2017 by Charles Carter 
-     create table friends (
-         friendID int primary key,
-         friendName text,
-         friendStreet text,
-         friendCity text,
-         friendState text,
-         friendZip text);
-	9.	What is an OLTP database? What operations is it optimized for?  
-	10.	What is a star schema? What operations is it optimized for?  
-Homework Exercises 
-	1.	Install SQL Server Express on a personal computer. See the appendix of the book, Getting Started, if you run into problems. Please, please check the system requirements before you do this. You cannot install SQL Server on a hand held device or an internet appliance. This may take a couple of hours but you can read the text book while you are waiting.  
-	2.	Install SQL Server Management Studio on a personal computer. See the cautions above. This may take a long time as well.  
-	3.	We will be downloading and installing the database the text uses. Read the Introduction. This can be obtained from http://aka.ms/T-SQLFund3e/downloads.  
-ID 
-FirstName 
-LastName 
-Street 
-City 
-State 
-Zip 
-1 
-Fred 
-Flintstone 
-123 Rock Quarry Rd 
-Bedrock 
-GA 
-31905 
-2 
-Greta 
-Garbo 
-456 Starlit Ave 
-Paris 
-FL 
-30019 
-3 
-Harry 
-Houdini 
-789 Hidden Glen Lane 
-Alcatraz 
-CA 
-00000 
-
-Page 2, Revised on December 27, 2017 by Charles Carter 
