@@ -1,0 +1,18 @@
+1.  Syntax; Semantics; Why do we care?  You are on a new IT team that is trying to come up with coding standards and best practices for application development in C#.  Why is it good to have coding standards and best practices?  How does knowing about the C# syntax and semantics assist with this task?
+
+Answer: Syntax and coding standards stream line the work programmers do, make coding more economical, which saves time and money.
+
+2.  Unexpected Errors
+
+Have you ever been on a web site and receive unexpected errors like the following: What kind of things cause errors like these? What kind of consequences can they lead to? What can you, as a programmer, do to prevent them from happening or from impacting your organization?
+
+Answer: A 404 Error is a web page that has a broken or a dead link. Which the programmer can at lease make an exception message for failing to load. Maybe use a try/catch/finally blocks to handle an exception instead of throwing an error. In the code 404, the first digit indicates a client error, such as a mistyped Uniform Resource Locator (URL). The following two digits indicate the specific error encountered. HTTP's use of three-digit codes is similar to the use of such codes in earlier protocols such as FTP and NNTP.
+
+
+3. Queues, Stacks, Heaps, Lists, Trees... Why are there so many kinds of data structures? What exactly is a "data structure?"  How would you compare the programmer's view of a data structure to what you see naturally in the "real world?" How can that comparison help you as a programmer?
+
+Answer: Data structures are the foundation of programming and being able to analyze large queues, or stacks of data with the appropriate algorithm is very important to programmers.  Being able to analyze the "real world" problem and converting it in to bit sized computer programs is the key.
+
+4.  Procedural, Object, or Data: Perspectives?  As a programmer, you have to focus your thinking either on the step-by-step of what you want to do, or the object-by-object, data-item-by-data-item that you need to do those steps to.  How does your viewpoint or thought process change as you "think in SQL?"
+
+Answer: "Thinking in SQL" will help solve the problem with the correct data structure and algorithms. 
